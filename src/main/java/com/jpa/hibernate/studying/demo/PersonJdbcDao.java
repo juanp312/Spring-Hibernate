@@ -1,6 +1,6 @@
 package com.jpa.hibernate.studying.demo;
 
-import Entity.Person;
+import jdbc.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

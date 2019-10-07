@@ -1,17 +1,16 @@
 package com.jpa.hibernate.studying.demo;
 
-import Entity.Person;
+import jdbc.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Date;
 
-@SpringBootApplication
-public class Application implements CommandLineRunner {
+//@SpringBootApplication
+public class ApplicationJdbc implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -19,7 +18,7 @@ public class Application implements CommandLineRunner {
 	PersonJdbcDao dao;
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(ApplicationJdbc.class, args);
 	}
 
 	@Override
